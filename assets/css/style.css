@@ -18,31 +18,29 @@ html, body {
 }
 
 header {
-	text-align: center;
-}
-
-h1 {
 	padding: 20px;
 }
 
-h2 {
+h1, h2 {
 	text-align: center;
+	display: block;
 }
 
-section, header {
+section, header, footer {
 	background-color: #646464;
 	width: 100%;
-
 }
 
-nav {
-
+section, header, nav > ul > li {
+	-webkit-box-shadow: 0px 6px 10px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 6px 10px 2px rgba(0,0,0,0.5);
+	box-shadow: 0px 6px 10px 2px rgba(0,0,0,0.5);
 }
 
 nav > ul {
 	display: flex;
 	justify-content: space-around;
-	padding:5px;
+	padding: 5px;
 
 }
 
@@ -55,16 +53,19 @@ nav > ul > li {
 
 section {
 	margin-top: 4vh;
-	display: flex;
 	padding-top: 2vh;
-	padding-bottom: 2vh;
+	padding-bottom: 4vh;
 }
 
 ul {
 	list-style: none;
 }
 
-.intro {
+/* #intro section styles */
+
+#intro {
+	display: flex;
+	padding-top: 4vh;
 	justify-content: space-around;
 }
 
@@ -73,29 +74,62 @@ ul {
 }
 
 .portrait {
-	background-image:url("../img/johannes-loewe.jpg");
+	background-image: url("../img/johannes-loewe.jpg");
 	background-size: cover;
 	border-radius: 50%;
 	background-repeat: no-repeat;
 	width: 30vw;
 	height: 30vw;
 
+}
 
+/* #portfolio section styles */
+
+#portfolio {
 
 }
 
-.portfolio {
-	justify-content: center;
+.pf-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-.skills {
-	justify-content: center;
+.pf-col {
+	width: 31%;
+	flex-basis: auto;
+	padding-top: 4vh;
+}
+
+.pf-col > img {
+	width:100%;
+
+}
+
+/* #skills section styles */
+
+#skills {
+	display: block;
 }
 
 .skill-box {
 	width: 90%;
+	height: 100vh;
 }
 
+/* #contact section styles */
+
+#contact {
+	justify-content: center;
+}
+
+footer {
+	margin-top: 4vh;
+	height: 10vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 
 
 
