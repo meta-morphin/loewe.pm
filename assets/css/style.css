@@ -1,11 +1,102 @@
-body {
-	width:100%;
-	background-color: #4CCC00;
+/* Reset browser styles */
+
+html, body, h1 {
+	margin: 0px;
+	padding: 0px;
 }
 
-section {
-	width:100%;
-	display: flex;
-	background-color: #646464;
-	margin-top: 20px;
+a {
+	text-decoration: none;
+	color: white;
 }
+
+html, body {
+	width: 100%;
+	background-color: #4CCC00;
+	color: white;
+	font-family: "Raleway", sans-serif;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	padding: 20px;
+}
+
+h2 {
+	text-align: center;
+}
+
+section, header {
+	background-color: #646464;
+	width: 100%;
+
+}
+
+nav {
+
+}
+
+nav > ul {
+	display: flex;
+	justify-content: space-around;
+	padding:5px;
+
+}
+
+nav > ul > li {
+	background-color: #646464;
+	padding: 15px;
+
+}
+
+
+section {
+	margin-top: 4vh;
+	display: flex;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+}
+
+ul {
+	list-style: none;
+}
+
+.intro {
+	justify-content: space-around;
+}
+
+.portrait, .intro-text {
+	width: 40%;
+}
+
+.portrait {
+	background-image:url("../img/johannes-loewe.jpg");
+	background-size: cover;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	width: 30vw;
+	height: 30vw;
+
+
+
+}
+
+.portfolio {
+	justify-content: center;
+}
+
+.skills {
+	justify-content: center;
+}
+
+.skill-box {
+	width: 90%;
+}
+
+
+
+
+
