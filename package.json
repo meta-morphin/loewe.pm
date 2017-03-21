@@ -1,0 +1,35 @@
+{
+  "name": "loewe.pm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zetamorph/loewe.pm.git"
+  },
+  "author": "Johannes Loewe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zetamorph/loewe.pm/issues"
+  },
+  "homepage": "https://github.com/zetamorph/loewe.pm#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.10.1",
+    "node-sass": "^4.5.1",
+    "pug-html-loader": "^1.1.1",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.15.0",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "bulma": "^0.4.0",
+    "lodash": "^4.17.4"
+  }
+}

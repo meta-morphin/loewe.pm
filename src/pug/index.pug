@@ -1,0 +1,70 @@
+<!doctype html>
+html
+head
+  link(rel="stylesheet" href="bundle.css" type="text/css")
+body
+  nav.nav.box
+    .nav-left 
+      a.nav-item 
+        h1.title Logo 
+    .nav-center
+      a.nav-item.is-tab(href="#projects") Projects
+      a.nav-item.is-tab(href="#about") About
+      a.nav-item.is-tab(href="#contact") Contact
+    .nav-right
+  section(name="projects").section
+    section.hero
+      .hero-body
+        .container.has-text-centered
+          h2.title.is-2 Projects
+          h6.subtitle A selection of my previous works
+    section.section
+      #project-slider-container.container
+        .columns
+          .column.is-1
+          .column.is-5
+            img(src="http://placehold.it/500x500")
+          .column.is-5
+            |Skills
+            ul
+              li Node.js
+              li Express.js
+              li SQLite 3
+              li Vue.js
+          .column.is-1
+
+        .container-fluid
+          |description
+  section(name="about").section
+    section.hero
+      .hero-body
+        .container.has-text-centered
+          h2.title.is-2 About Me
+          h6.subtitle A brief overview 
+  section(name="contact").section
+    section.hero
+        .hero-body
+          .container.has-text-centered
+            h2.title.is-2 Contact
+            h6.subtitle Find me on social media or just send a message
+    section.section
+      .columns
+        .column.is-1
+        .column.is-10
+          form
+            .field.is-horizontal
+              .field-label.is-normal 
+                label.label Your Name
+              .field-body
+                input.input(type="text")
+            .field.is-horizontal
+              .field-label.is-normal 
+                label.label Your Email
+              .field-body
+                input.input(type="email")
+            .field.is-horizontal
+              .field-label.is-normal 
+                label.label Your Message
+              .field-body
+                input.input(type="text")
+        .column.is-1
