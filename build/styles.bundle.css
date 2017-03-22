@@ -3932,7 +3932,11 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 h1 {
-  color: #34495e; }
+  color: red; }
+
+#portrait-container {
+  border-radius: 50%;
+  background: red; }
 
 #contact, #projects, #about {
   height: 100vh; }

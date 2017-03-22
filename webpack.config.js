@@ -3,8 +3,8 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: "./build",
-    filename: "bundle.js",
+    path: "build",
+    filename: "app.bundle.js"
   },
   devServer: {
     contentBase: "/build"
@@ -26,11 +26,15 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        loaders: ["file-loader?name=[name].html", "pug-html-loader?pretty&exports=false"]
+        loaders: ["file-loader?name=[name].html", "pug-html-loader?exports=false"]
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: ["file-loader?name=[name].[ext]&outputPath=./img/", "image-webpack-loader"]
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin("bundle.css")
+    new ExtractTextPlugin("styles.bundle.css")
   ] 
 };

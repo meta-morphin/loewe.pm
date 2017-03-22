@@ -8,6 +8,12 @@ h1 {
 .section {
 
 }
+
+#portrait-container {
+  border-radius: 50%;
+  background: $primary-color;
+}
+
 #contact, #projects, #about {
   height: 100vh;
 }
