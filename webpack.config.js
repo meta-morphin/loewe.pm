@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: ["file-loader?name=[name].[ext]&outputPath=./img/", "image-webpack-loader"]
+        loaders: ["file-loader?name=[name].[ext]", "image-webpack-loader"]
       }
     ]
   },

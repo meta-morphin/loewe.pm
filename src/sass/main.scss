@@ -7,6 +7,8 @@ $primary: $purple;
 
 // anchor helper
 
+
+
 .anchor-helper {
   visibility: hidden;
   padding-top: 110px;
@@ -46,4 +48,45 @@ $primary: $purple;
 .img-circle {
   border-radius: 100%;
 }
+
+.skills-list {
+  height: 100%;
+}
+
+.skills-list > li {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-link {
+  height: 100%;
+}
+
+.image {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.skills-tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-list > li:hover > .skills-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 
