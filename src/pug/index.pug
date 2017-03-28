@@ -3,15 +3,17 @@ html
 head
   link(rel="stylesheet" href="styles.bundle.css" type="text/css")
 body
-  nav.nav.box
+  nav#main-nav.nav.box
     .nav-left 
       a.nav-item 
-        h1.title Logo 
+        h6 Logo 
     .nav-center
       a.nav-item.is-tab(href="#about") About
       a.nav-item.is-tab(href="#projects") Projects
       a.nav-item.is-tab(href="#contact") Contact
     .nav-right
+      a.nav-item.is-tab(href="#") Source
+  include includes/intro.pug
   include includes/about.pug
   include includes/projects.pug
   include includes/contact.pug

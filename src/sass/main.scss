@@ -1,22 +1,49 @@
 @import "colors";
+
+$primary: $purple;
+
+
 @import "~bulma/bulma";
 
-h1 {
-  color: $primary-color;
+// anchor helper
+
+.anchor-helper {
+  visibility: hidden;
+  padding-top: 110px;
+  margin-top: -110px;
 }
 
-.section {
+#main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
+.fullheight-section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#intro-section {
+  justify-content: center;
+  height: 100vh;
+}
+
+#contact-section {
+  height: 85vh;
+  padding-top: 0;
 }
 
 #portrait-container {
-  border-radius: 50%;
-  background: $primary-color;
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
 }
 
-#contact, #projects, #about {
-  height: 100vh;
+.img-circle {
+  border-radius: 100%;
 }
-#contact {
-  padding-top: 0;
-}
+
