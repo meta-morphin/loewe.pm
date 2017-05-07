@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -23,62 +25,16 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none; } }
 
-q:before, q:after {
-  content: '';
-  content: none; }
+q {
+  &:before, &:after {
+    content: '';
+    content: none; } }
 
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-
-body {
-  display: flex;
-  flex-direction: column;
-  font-size: 100%;
-  font-family: "Lato", sans-serif; }
-
-h1, h2, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif; }
-
-.navbar {
-  min-height: 50px;
-  position: fixed;
-  display: flex;
-  justify-content: space-between; }
-
-.intro {
-  display: inherit;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; }
-
-.intro__logo {
-  height: 100%;
-  width: auto; }
-
-.intro__heading {
-  margin-top: 5rem;
-  font-size: 2rem;
-  text-align: center; }
-
-.about {
-  display: inherit;
-  height: 100vh; }
-
-.about__portrait-container {
-  height: 200px;
-  width: 200px; }
-
-.about__portrait {
-  height: 100%;
-  width: 100%; }
-
-.purple {
-  background: #35008C; }
-
-.orange {
-  background: #FF4E00; }

@@ -97,10 +97,12 @@ module.exports = __webpack_require__.p + "index.html";
 __webpack_require__(3);
 __webpack_require__(0);
 
-//require images
+// require images
 
 __webpack_require__(2);
 __webpack_require__(1);
+
+// third-party logos
 
 /***/ })
 /******/ ]);

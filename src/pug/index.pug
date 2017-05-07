@@ -1,23 +1,15 @@
-<!doctype html>
+doctype html
 html
-head
-  link(rel="stylesheet" href="styles.bundle.css" type="text/css")
-body
-  nav#main-nav.nav.box
-    .nav-left 
-      a.nav-item 
-        h6 Logo 
-    .nav-center
-      a.nav-item.is-tab(href="#about") About
-      a.nav-item.is-tab(href="#projects") Projects
-      a.nav-item.is-tab(href="#contact") Contact
-    .nav-right
-      a.nav-item.is-tab(href="#") Source
-  include includes/intro.pug
-  include includes/about.pug
-  include includes/projects.pug
-  include includes/contact.pug
-  include includes/footer.pug
-  
-  
-  
+  head
+    include includes/head.pug
+  body
+    include includes/navigation.pug
+    include includes/intro.pug
+    include includes/about.pug
+    include includes/skills.pug
+    include includes/projects.pug
+    include includes/contact.pug
+    include includes/footer.pug
+    include includes/scripts.pug
+
+

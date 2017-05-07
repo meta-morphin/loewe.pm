@@ -1,0 +1,12 @@
+include ./../mixins/nav_item.pug
+
+nav.navbar
+  ul.navbar__list.navbar__left-list
+    +nav_item("About", "#about")
+    +nav_item("Skills", "#skills")
+  .navbar__logo-container
+    img.navbar__logo(src="https://about.gitlab.com/images/new_logo/A.jpg")
+  ul.navbar__list.navbar__right-list
+    +nav_item("Projects", "#projects")
+    +nav_item("Contact", "#contact")
+  

@@ -1,5 +1,6 @@
-nav.nav
-  .nav-center
-    a.nav-item(href="/impressum.html") Impressum / Legal Notice
-    a.nav-item(href="/datenschutz") Datenschutzerklärung / Privacy Policy
-      
+include ./../mixins/nav_item.pug
+.footer
+  ul.footer__list
+    +nav_item("Impressum/Legal Notice", "#")
+    +nav_item("Datenschutzerklärung", "#")
+  

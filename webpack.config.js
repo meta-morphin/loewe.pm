@@ -7,7 +7,8 @@ module.exports = {
     filename: "app.bundle.js"
   },
   devServer: {
-    contentBase: "/build"
+    contentBase: "/build",
+    inline: true
   },
   node: {
     fs: "empty"
@@ -30,7 +31,7 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: ["file-loader?name=[name].[ext]", "image-webpack-loader"]
+        loaders: ["file-loader?name=[name].[ext]", "image-webpack-loader?bypassOnDebug"]
       }
     ]
   },
