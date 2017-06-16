@@ -63,46 +63,64 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+function setLinkDescription(description) {
+  document.querySelector(".link-box__description").innerHTML = description;
+}
+document.querySelector(".project__icon-link.github").forEach((el, ind, arr) => {
+  el.addEventListener("hover", setLinkDescription("View source on GitHub"));
+});
+document.querySelector(".project__icon-link.web").forEach((el, ind, arr) => {
+  el.addEventListener("hover", setLinkDescription("View live site"));
+});
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "johannes-loewe-portrait.jpg";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "voto.png";
+module.exports = __webpack_require__.p + "johannes-loewe-portrait.jpg";
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "index.html";
+module.exports = __webpack_require__.p + "shortr.png";
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(3);
+module.exports = __webpack_require__.p + "voto.png";
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "index.html";
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(5);
+__webpack_require__(1);
 __webpack_require__(0);
 
-// require images
-
 __webpack_require__(2);
-__webpack_require__(1);
-
-// third-party logos
+__webpack_require__(4);
+__webpack_require__(3);
 
 /***/ })
 /******/ ]);
